@@ -1,5 +1,5 @@
 --- 
-hash: b220663aa472c4b931726809db48c44c4750d489
+hash: 35bcaa4b7f9d5b1ed3c8701008a2505b23d66f25
 sources: 
 - Rubygems: 
     uri: http://rubygems.org
@@ -44,28 +44,46 @@ specs:
     version: 3.0.0.beta4
 - activeresource: 
     version: 3.0.0.beta4
+- addressable: 
+    version: 2.1.2
 - bundler: 
     version: 0.9.26
+- culerity: 
+    version: 0.2.10
+- nokogiri: 
+    version: 1.4.2
+- ffi: 
+    version: 0.6.3
+- json_pure: 
+    version: 1.4.3
+- rubyzip: 
+    version: 0.9.4
+- selenium-webdriver: 
+    version: 0.0.27
+- capybara: 
+    version: 0.3.9
 - diff-lcs: 
     version: 1.1.2
 - trollop: 
     version: 1.16.2
 - gherkin: 
-    version: 2.1.4
-- json_pure: 
-    version: 1.4.3
+    version: 2.1.5
 - term-ansicolor: 
     version: 1.0.5
 - cucumber: 
     version: 0.8.5
 - cucumber-rails: 
     version: 0.3.2
+- faraday: 
+    version: 0.4.6
 - haml: 
     version: 3.0.13
-- nokogiri: 
-    version: 1.4.2
+- multi_json: 
+    version: 0.0.4
+- oauth2: 
+    version: 0.0.10
 - thor: 
-    version: 0.13.7
+    version: 0.13.8
 - railties: 
     version: 3.0.0.beta4
 - rails: 
@@ -99,6 +117,10 @@ dependencies:
     version: ">= 0"
     group: 
     - :default
+  oauth2: 
+    version: ">= 0"
+    group: 
+    - :default
   rspec: 
     version: = 2.0.0.beta.17
     group: 
@@ -115,7 +137,7 @@ dependencies:
     version: ">= 0"
     group: 
     - :test
-  webrat: 
+  capybara: 
     version: ">= 0"
     group: 
     - :test
