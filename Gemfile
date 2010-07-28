@@ -3,7 +3,7 @@ source 'http://rubygems.org'
 gem 'rails', '3.0.0.beta4'
 gem 'sqlite3-ruby', :require => 'sqlite3'
 gem 'haml'
-gem 'oauth2'
+gem 'oauth'
 
 group :test do
   gem 'rspec', '2.0.0.beta.17'
@@ -11,4 +11,5 @@ group :test do
   gem 'cucumber'
   gem 'cucumber-rails'
   gem 'capybara'
+  gem 'fakeweb'
 end

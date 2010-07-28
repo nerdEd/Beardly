@@ -1,5 +1,5 @@
 --- 
-hash: 35bcaa4b7f9d5b1ed3c8701008a2505b23d66f25
+hash: 995b895b7b9945e0a1622f0146df5b4661863da3
 sources: 
 - Rubygems: 
     uri: http://rubygems.org
@@ -44,8 +44,6 @@ specs:
     version: 3.0.0.beta4
 - activeresource: 
     version: 3.0.0.beta4
-- addressable: 
-    version: 2.1.2
 - bundler: 
     version: 0.9.26
 - culerity: 
@@ -74,14 +72,12 @@ specs:
     version: 0.8.5
 - cucumber-rails: 
     version: 0.3.2
-- faraday: 
-    version: 0.4.6
+- fakeweb: 
+    version: 1.2.8
 - haml: 
-    version: 3.0.13
-- multi_json: 
-    version: 0.0.4
-- oauth2: 
-    version: 0.0.10
+    version: 3.0.15
+- oauth: 
+    version: 0.4.1
 - thor: 
     version: 0.13.8
 - railties: 
@@ -117,7 +113,7 @@ dependencies:
     version: ">= 0"
     group: 
     - :default
-  oauth2: 
+  oauth: 
     version: ">= 0"
     group: 
     - :default
@@ -138,6 +134,10 @@ dependencies:
     group: 
     - :test
   capybara: 
+    version: ">= 0"
+    group: 
+    - :test
+  fakeweb: 
     version: ">= 0"
     group: 
     - :test

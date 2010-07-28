@@ -1,5 +1,7 @@
 Beardly::Application.routes.draw do |map|
-  resources :sessions
+  match '/logout', :to => 'sessions#destroy', :as => 'logout'
+  match '/login', :to => 'sessions#new', :as => 'login'
+  match '/twitter_login', :to => 'auth/twitter#login'
 
-  root :to => "welcome#index"
+  root :to => 'welcome#index'
 end

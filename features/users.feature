@@ -9,12 +9,11 @@ Feature: Registering and logging in
     And   I follow "Login"
     Then  I should see "Login with Twitter"
 
-  @wip
-  Scenario: Getting redirected to twitter when attempting to login with twitter
+  Scenario: Being redirected to twitter for authorization
     Given I am a user
     When  I go to the login page
     And   I follow "Login with Twitter"
-    Then  I should be on the twitter auth page
+    Then  I should be on the twitter authentication page
 
   @wip
   Scenario: Registering a user via twitter
@@ -22,10 +21,10 @@ Feature: Registering and logging in
     When  I go to the login page
     And   I follow "Login with Twitter"
     And   twitter authentication is successful
-    Then  I should be redirected to the homepage
+    Then  I should be on the homepage
     And   I should not see "Login"
     And   I should see "Logout"
-    And   there should be a new user created for me
+    And   there should be a new user for the returned twitter information
 
   @wip
   Scenario: Logging in with twitter after already registering
