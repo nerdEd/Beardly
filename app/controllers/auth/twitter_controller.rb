@@ -2,8 +2,8 @@ class Auth::TwitterController < ApplicationController
 
   def login
     twitter_consumer = OAuth::Consumer.new(
-      TWITTER_CONSUMER_KEY,
-      TWITTER_CONSUMER_SECRET,
+      ENV['BEARDLY_TWITTER_KEY'],
+      ENV['BEARDLY_TWITTER_SECRET'],
       :authorize_path => '/oauth/authenticate',
       :site => 'http://api.twitter.com'
     )
