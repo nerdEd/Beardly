@@ -13,3 +13,7 @@ group :test do
   gem 'capybara'
   gem 'fakeweb'
 end
+
+group :development do
+  gem 'ruby-debug'
+end
