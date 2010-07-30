@@ -18,10 +18,11 @@ class Auth::TwitterController < ApplicationController
       @access_token = request_token.get_access_token(:oauth_verifier => params[:oauth_verifier])
       session.delete(:request_token)
       session.delete(:request_token_secret)
-      
+
       if @access_token
-        user = JSON.parse(@access_token.get('/account/verify_credentials.json').body)
-        # create a new beardly user using this users information
+        twitter_user = JSON.parse(@access_token.get('/account/verify_credentials.json').body)
+        user = User.find_or_create_by_name(:name => twitter_user['name'], :twitter_handle => twitter_user['screen_name'])
+        session[:user] = user
       end
 
       redirect_to root_path 
