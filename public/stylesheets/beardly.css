@@ -1,3 +1,43 @@
+body {
+  background-color: #292F31;
+}
+
+image {
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#header, #content {
+  width: 800px;
+  margin: 0 auto;
+  padding: 10px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  -moz-border-radius: 10px;  
+  opacity: .7;
+}
+
+#header {
+  height: 70px;
+}
+#header .logo {
+  display: block;
+  float: left;
+}
+
+#header .controls {
+  display: inline-block;
+  float: right;
+}
+
+#content {
+  margin-top: 30px;
+  min-height: 400px;
+}
+
 .centered {
   margin: 0 auto;
   text-align: center;

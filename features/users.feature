@@ -7,7 +7,7 @@ Feature: Registering and logging in
     Given I am a user
     When  I go to the homepage
     And   I follow "Login"
-    Then  I should see "Login with Twitter"
+    Then  I should be on the login page
 
   Scenario: Being redirected to twitter for authorization
     Given I am a user
